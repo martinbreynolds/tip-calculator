@@ -8,4 +8,4 @@ var tipPercent = +prompt('What rate are you tipping at? excluding the % sign.')
 var tipAmount = (preTip / 100) * tipPercent;
 var newBillAmount = preTip + tipAmount;
 
-alert('Your total bill is £'+newBillAmount.toFixed(2));
+alert('Your total bill is £'+newBillAmount.toFixed(2)+', made up of your initial bill of £'+preTip.toFixed(2)+' and your tip of £'+tipAmount.toFixed(2))+'.';
