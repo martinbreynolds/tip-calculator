@@ -1,0 +1,11 @@
+// Tip Calculator JS //
+
+//Get initial amounts from prompt boxes, using + to ocnvert string to number.
+var preTip = +prompt('How much does your bill come to?');
+var tipPercent = +prompt('What rate are you tipping at? excluding the % sign.')
+
+//Calculate tip amount then add to preTtip to give total
+var tipAmount = (preTip / 100) * tipPercent;
+var newBillAmount = preTip + tipAmount;
+
+alert('Your total bill is £'+newBillAmount);
